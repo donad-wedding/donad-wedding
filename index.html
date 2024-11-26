@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nadia & Aldo Wedding</title>
+    <link rel="icon" type="image/x-icon" href="img/brand.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,27 +20,641 @@
     <!-- SimplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <section
       id="hero"
-      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center"
     >
       <main>
         <h4>Kepada Yth.Bapak/Ibu/Saudara/i,</h4>
         <h1>Nadia & Aldo</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+          >Lihat Undangan</a
+        >
       </main>
     </section>
+    <nav class="navbar navbar-expand-md sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Donad</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Donad</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Untold Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">GIFTS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 12 Desember 2024 di Kota Probolinggo.</h3>
+            <p>
+              Dengan segala hormat kami bermaksud mengundang
+              Bapak/Ibu/Saudara/i, untuk hadir pada acara resepsi pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Nadia Nastiti Primadani</h3>
+                <h5>The Bride</h5>
+                <p>
+                  Putri kedua dari Bpk.Agus Prio Utomo <br />
+                  dan <br />
+                  Ibu Nunuk
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/bride.jpeg"
+                  alt="Nadia Nastiti"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/groom.jpeg"
+                  alt="Aldo Aji Irawan"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Aldo Aji Irawan</h3>
+                <h5>The Groom</h5>
+                <p>
+                  Putra pertama dari Bpk.Lasmaji <br />
+                  dan <br />
+                  Ibu Amilu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat: Angkringan Cak Alfin Cafe & Resto, Probolinggo. <br />
+              Jl. Sultan Agung No.4, Kanigaran, Kec. Kanigaran, Kota
+              Probolinggo.
+            </p>
+            <img src="img/Peta Lokasi.png" width="100%" height="500" alt="" />
+            <a
+              href="https://maps.app.goo.gl/pKRESZZovRykCPcu8"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Klik untuk membuka peta</a
+            >
+            <p class="deskripsi">
+              Dimohon kehadiran sesuai tanggal dan jam dibawah:
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 - 12.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar2-heart-fill d-block"></i>
+                    <span>Kamis,12 Desember 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Bertempat di kediaman mempelai wanita.<br />
+                Alamat : Jl.Kapten Pattimura No.159 Kota Probolinggo
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>17.00 - 20.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar2-heart-fill d-block"></i>
+                    <span>Kamis,12 Desember 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Diharap hadir sesuai tanggal dan jam acara.<br />
+                Bertempat di Cafe Angkringan Cak Alfin Cafe & Resto.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Perjalanan Cinta Kami</span>
+            <h2>Untold Story</h2>
+            <p>Rahasia di Balik Janji Suci:Untold Story Aldo & Nadia.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/bg-timeline1.PNG)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Awal Berkenalan</h3>
+                    <span>Agustus 2019</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Kisah kami dimulai berkat peran seorang yang istimewa:
+                      kakakku (Jean Anne). Dalam sebuah media sosial Instagram
+                      yang awalnya terasa biasa, ia memperkenalkan kami. Siapa
+                      sangka, perkenalan sederhana itu menjadi awal dari cerita
+                      yang tidak akan pernah kami lupakan. Meski saat itu kami
+                      hanya berbincang sekilas, ada sesuatu yang membuat
+                      pertemuan itu tetap teringat hingga hari ini.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gallery/1.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Dekat</h3>
+                    <span>Desember 2019</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Hari demi hari berlalu, dan semakin sering kami
+                      berbincang, semakin banyak hal yang kami temukan satu sama
+                      lain. Mulai dari kebiasaan kecil, kesukaan yang kita
+                      miliki, hingga kebersamaan yang membuat segalanya terasa
+                      lebih bermakna. Meski belum diucapkan, kami tahu bahwa ada
+                      sesuatu yang berbeda, sesuatu yang mulai tumbuh.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gallery/S-3.jpg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Terpisah oleh perjodohan</h3>
+                    <span>Agustus 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Namun, takdir memiliki rencana lain. Di tengah perjalanan,
+                      kami harus menghadapi kenyataan pahit: ada perjodohan yang
+                      membuat langkah kami seolah terhenti. Segalanya menjadi
+                      abu-abu, dan hubungan yang mulai terbentuk perlahan terasa
+                      menjauh. Kami hanya bisa menerima, meski hati ini sulit
+                      untuk melepaskan.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gallery/3.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Dipertemukan kembali oleh takdir</h3>
+                    <span>Januari 2022</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Tapi, seperti yang mereka katakan, cinta sejati selalu
+                      menemukan jalannya. Setelah semua yang terjadi, semesta
+                      kembali mempertemukan kami. Dalam momen yang sederhana
+                      namun penuh makna, kami menyadari bahwa ini bukan
+                      kebetulan semata. Ada kekuatan tak terlihat yang mengatur
+                      segalanya, seolah-olah mengatakan bahwa kami memang
+                      ditakdirkan untuk bersama.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gallery/9.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai ke Jenjang Serius</h3>
+                    <span>Jan 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Kini, kami tahu bahwa perjalanan ini harus diarahkan ke
+                      sesuatu yang lebih serius. Dengan doa dan dukungan dari
+                      keluarga serta sahabat, kami memutuskan untuk melangkah
+                      bersama. Hari-hari dipenuhi dengan rencana dan harapan,
+                      membayangkan masa depan yang akan kami bangun berdua.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gallery/10.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>Juli 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Puncaknya adalah momen ketika dia mengungkapkan niatnya
+                      untuk menjadikan hubungan ini abadi. Dengan segenap hati,
+                      dia melamar, dan aku menjawab dengan keikhlasan yang sama.
+                      Itu bukan hanya sebuah pertanyaan, tetapi sebuah janji
+                      untuk saling menjaga, mencintai, dan mendukung dalam suka
+                      maupun duka.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Menua bersamamu. Anugerah terindah yang pernah kumiliki.</p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gallery/1.jpeg"
+              data-toggle="lightbox"
+              data-caption="Sesaat setelah akad nikah kakak Nadia"
+            >
+              <img
+                src="img/gallery//thumbnail/1.jpeg"
+                alt="Nadia-Aldo-1"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/2.jpeg"
+              data-toggle="lightbox"
+              data-caption="Staycation ke Jatimpark 1"
+            >
+              <img
+                src="img/gallery//thumbnail/2.jpeg"
+                alt="Nadia-Aldo-2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/3.jpeg"
+              data-toggle="lightbox"
+              data-caption="Momen hari raya Idul Fitri 2023"
+            >
+              <img
+                src="img/gallery//thumbnail/3.jpeg"
+                alt="Nadia-Aldo-3"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/4.jpeg"
+              data-toggle="lightbox"
+              data-caption="Disalah satu cafe favorit kami di Kota Probolinggo"
+            >
+              <img
+                src="img/gallery//thumbnail/4.jpeg"
+                alt="Nadia-Aldo-4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/5.jpeg"
+              data-toggle="lightbox"
+              data-caption="Sesaat sehabis hujan di Kota Wisata Batu"
+            >
+              <img
+                src="img/gallery//thumbnail/5.jpeg"
+                alt="Nadia-Aldo-5"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/6.jpeg"
+              data-toggle="lightbox"
+              data-caption="Saat staycation ke Kota Bunga Malang"
+            >
+              <img
+                src="img/gallery//thumbnail/6.jpeg"
+                alt="Nadia-Aldo-6"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/7.jpeg"
+              data-toggle="lightbox"
+              data-caption="Candlelight dinner di Cafe Kota Probolinggo"
+            >
+              <img
+                src="img/gallery//thumbnail/7.jpeg"
+                alt="Nadia-Aldo-7"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/8.jpeg"
+              data-toggle="lightbox"
+              data-caption="Candlelight dinner di Cafe Kota Probolinggo"
+            >
+              <img
+                src="img/gallery//thumbnail/8.jpeg"
+                alt="Nadia-Aldo-8"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/9.jpeg"
+              data-toggle="lightbox"
+              data-caption="Air Terjun Coban Talun Kota Wisata Batu"
+            >
+              <img
+                src="img/gallery//thumbnail/9.jpeg"
+                alt="Nadia-Aldo-9"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/10.jpeg"
+              data-toggle="lightbox"
+              data-caption="Persiapan Pernikahan kami"
+            >
+              <img
+                src="img/gallery//thumbnail/10.jpeg"
+                alt="Nadia-Aldo-10"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/11.jpeg"
+              data-toggle="lightbox"
+              data-caption="Persiapan Pernikahan kami"
+            >
+              <img
+                src="img/gallery//thumbnail/11.jpeg"
+                alt="Nadia-Aldo-11"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Silahkan isi form dibawah untuk mengonfirmasi kehadiran anda.</p>
+          </div>
+        </div>
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyqTSvuLOkTvPuSMOMTOIMu5h1cur-kQjxpkxgAF2Wj0zSCe0MroH5SuzakLHwbfXWM6g/exec"
+          id="my-form"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                max="4"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://donadwedding.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gifts" id="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              Terima kasih telah menjadi bagian dari hari paling bahagia dalam
+              hidup kami.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">- BCA -</div>
+                0391221820 - NADIA NASTITI PRIMADANI
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col text-center">
+          <small class="block"
+            >&copy; 2024 Donad's Wedding. All Rights Reserved.</small
+          >
+          <small class="block"
+            >Design by
+            <a href="https://instagram.com/triarief_wicaksono"
+              >Arief Tri Wicaksono</a
+            >.</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source
+          src="audio/Britney Spears - Everytime (Lyrics).mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2024, // required
@@ -53,6 +668,84 @@
           minutes: { singular: "menit", plural: "menit" },
           seconds: { singular: "detik", plural: "detik" },
         },
+      });
+    </script>
+    <script>
+      const stikyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stikyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stikyTop.style.overflow = "hidden";
+      });
+    </script>
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(screenTop, screenLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        playAudio();
+        // localStorage.setItem("opened", "true");
+      }
+
+      function playAudio() {
+        song.volume = 0.3;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.remove("bi-pause-circle");
+          audioIcon.classList.add("bi-disc");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem("opened")) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Pesan kehadiran anda sukses terkirim!");
+          });
+        });
       });
     </script>
   </body>
